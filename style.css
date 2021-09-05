@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #e6e6e6;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #161724;
+}
+
+.container {
+  width: 90%;
+  height: auto;
+  padding: 20px;
+  background-color: #19192C;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 60%;
+    padding: 60px;
+  }
+  .container .person {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container .person-img {
+    display: inline-block !important;
+    border: 1px solid #474F66;
+    border-radius: 5px;
+    height: 1%;
+    padding: 30px;
+    margin: 27px 30px 0 0;
+  }
+  .container .person-img .div-img {
+    width: 120px;
+    height: 120px;
+    margin: 20px 0;
+    background: url("./person.jfif") center center/cover;
+    border-radius: 50%;
+  }
+  .container .person-img h4 {
+    color: #4577B8;
+    text-align: center;
+  }
+}
+
+.container .person {
+  margin-top: 20px;
+}
+
+.container .person-img {
+  display: none;
+}
+
+.container .person-form form {
+  display: inline-block;
+}
+
+.container .person-form form label {
+  display: block;
+  font-size: 12px;
+}
+
+.container .person-form form label.half {
+  display: inline-block;
+  width: 47%;
+}
+
+.container .person-form form label.half:nth-child(even) {
+  float: right;
+}
+
+.container .person-form form input {
+  width: 100%;
+  display: block;
+  border: 1px solid #474F66;
+  outline: none;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 7px 0px 20px;
+  background-color: #19192C;
+}
+
+.container .person-form form input:focus {
+  border-color: #4577B8;
+}
+
+.container .person-form form input.half {
+  width: 47%;
+  display: inline-block;
+}
+
+.container .person-form form input.half:nth-of-type(even) {
+  float: right;
+}
+
+.container .person-form form .btns {
+  width: 100%;
+  direction: rtl;
+}
+
+.container .person-form form .btns button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 20px 0px;
+  -webkit-box-shadow: 0 0 50px #222222;
+          box-shadow: 0 0 50px #222222;
+}
+
+.container .person-form form .btns button:first-of-type {
+  color: #19192C;
+  margin-left: 10px;
+  background: #e6e6e6;
+}
+/*# sourceMappingURL=style.css.map */

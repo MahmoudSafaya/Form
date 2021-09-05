@@ -1,0 +1,135 @@
+$darkBlue: #19192C;
+$lightDarkBLue: #474F66;
+$blue: #4577B8;
+$white: #e6e6e6;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $white;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #161724;
+  font-family: sans-serif, serif;
+}
+
+.container{
+  width: 90%;
+  height: auto;
+  padding: 20px;
+  background-color: $darkBlue;
+  border-radius: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 60%;
+    padding: 60px;
+
+    .person{
+      display: flex;
+      justify-content: space-between;
+      
+      &-img{
+        display: inline-block !important;
+        border: 1px solid $lightDarkBLue;
+        border-radius: 5px;
+        height: 1%;
+        padding: 30px;
+        margin: 27px 30px 0 0;
+        .div-img{
+          width: 120px;
+          height: 120px;
+          margin: 20px 0;
+          background: url('./person.jfif') center center/cover;
+          border-radius: 50%;
+        }
+
+        h4{
+          color: $blue;text-align: center;
+        }
+      }
+    }
+  }
+
+  .person{
+    margin-top: 20px;
+    
+    &-img{
+      display: none;
+    }
+
+    &-form form{
+      display: inline-block;
+      label{
+        display: block;
+        
+        font-size: 12px;
+
+        &.half{
+          display: inline-block;
+          width: 47%;
+
+          &:nth-child(even){
+            float: right;
+          }
+        }
+      }
+      input{
+        width: 100%;
+        display: block;
+        border: 1px solid $lightDarkBLue;
+        outline: none;
+        border-radius: 5px;
+        font-weight: bold;
+        padding: 10px;
+        margin: 7px 0px 20px;
+        
+        background-color: $darkBlue;
+
+        &:focus{
+          border-color: $blue;
+        }
+        &.half{
+          width: 47%;
+          display: inline-block;
+          &:nth-of-type(even){
+            float: right;
+          }
+        }
+      }
+
+
+      // style of the buttons
+      .btns{
+        width: 100%;
+        direction: rtl;
+
+        button{
+          padding: 10px;
+          border: none;
+          outline: none;
+          border-radius: 5px;
+          
+          background-color: rgba(0, 0, 0, 0.5);
+          cursor: pointer;
+          margin: 20px 0px;
+          box-shadow: 0 0 50px rgb(34, 34, 34);
+
+          &:first-of-type{
+            color: $darkBlue;
+            margin-left: 10px;
+            background: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+
